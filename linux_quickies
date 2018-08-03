@@ -3,3 +3,8 @@ task Kill_Port_In_Linux
   const port=8000
   fuser -k port/tcp
 }  
+
+task Permissions
+{
+  chmod -R 777 file/name
+}
