@@ -1,19 +1,26 @@
 task Importing_DataBases
 {
 	//Before SQL import/
-	1)SET GLOBAL sql_mode = ' ';
+	SET GLOBAL sql_mode = ' ';
 
-	2)USE schema;
+	USE schema;
 
-	3)SET FOREIGN_KEY_CHECKS=0;
+	SET FOREIGN_KEY_CHECKS=0;
 
 	//After successful run
 
-	1)SET FOREIGN_KEY_CHECKS=1; (edited)
+	SET FOREIGN_KEY_CHECKS=1; (edited)
 }
 
 task Running_After_Clone
 {
-   1)composer dump-autoload
-   2)composer install --no-scripts 
+  composer dump-autoload
+  composer install --no-scripts 
+}
+
+task Run_project
+{   
+    const port=8000
+    const IP=localhost
+    php -S IP:port -t public public/index.php
 }
