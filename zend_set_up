@@ -1,0 +1,19 @@
+task ImportingDataBases
+{
+	/Before SQL import/
+	1)SET GLOBAL sql_mode = ' ';
+
+	2)USE schema;
+
+	3)SET FOREIGN_KEY_CHECKS=0;
+
+	//After successful run
+
+	1)SET FOREIGN_KEY_CHECKS=1; (edited)
+}
+
+task RunningAfterClone
+{
+   1)composer dump-autoload
+   2)composer install --no-scripts 
+}
