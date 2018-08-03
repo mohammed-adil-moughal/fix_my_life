@@ -21,6 +21,6 @@ task Running_After_Clone
 task Run_project
 {   
     const port=8000
-    const IP=localhost
+    const ip=localhost
     php -S ip:port -t public public/index.php
 }
