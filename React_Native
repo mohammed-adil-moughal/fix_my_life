@@ -4,7 +4,7 @@ task Get_Up_And_Running
    
    yarn
    yarn start (in the first terminal console)
-   react-native run-android (run this in the second terminal console) (edited)
+   react-native run-android (run this in the second terminal console)
    grant overlay permission in the window appearing just on the smartphone after run-android success
    wait until all dependencies loaded
 }
