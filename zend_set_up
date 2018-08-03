@@ -22,5 +22,5 @@ task Run_project
 {   
     const port=8000
     const IP=localhost
-    php -S IP:port -t public public/index.php
+    php -S ip:port -t public public/index.php
 }
