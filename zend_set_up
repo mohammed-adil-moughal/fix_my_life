@@ -1,6 +1,6 @@
-task ImportingDataBases
+task Importing_DataBases
 {
-	/Before SQL import/
+	//Before SQL import/
 	1)SET GLOBAL sql_mode = ' ';
 
 	2)USE schema;
@@ -12,7 +12,7 @@ task ImportingDataBases
 	1)SET FOREIGN_KEY_CHECKS=1; (edited)
 }
 
-task RunningAfterClone
+task Running_After_Clone
 {
    1)composer dump-autoload
    2)composer install --no-scripts 
