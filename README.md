@@ -7,3 +7,5 @@ Create Pull Requests if you feel you need to add something the end goal is to co
 Contains commands to get you up and running faster 
 
 1)ZEND PHP set up
+2)React Native 
+3)Linux Quickies
