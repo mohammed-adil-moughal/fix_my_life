@@ -1,11 +1,11 @@
-# fix_my_life
+# fix_my_life :sweat_smile:
 
-The Purpose of This Repository is to Fix My Broken Life
+The Purpose of This Repository is to Fix My Broken Life :doughnut::pensive:
 
-Create Pull Requests if you feel you need to add something the end goal is to convert this to a npm library for fix-my-life commands
+Create Pull Requests if you feel you need to add something the end goal is to convert this to a npm library for fix-my-life commands:thumbsup:
 
 Contains commands to get you up and running faster 
 
-1)ZEND PHP set up
-2)React Native 
-3)Linux Quickies
+:one:ZEND PHP set up
+:two:React Native 
+:three:Linux Quickies
