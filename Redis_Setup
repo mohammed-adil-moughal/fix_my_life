@@ -2,7 +2,7 @@ task Set_Up_Redis
 {
   sudo apt-get install make gcc g++
   
-  // Dowload Redis package and unpack
+  // ##Dowload Redis package and unpack
 
   mkdir -p /tmp/redis
   cd /tmp/redis
