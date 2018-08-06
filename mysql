@@ -1,3 +1,10 @@
+#run
+mysql -u root -p
+
+#selectdatabase
+USE database;
+
+
 #ShowPermissions
 SHOW GRANTS FOR 'root'@'localhost';
 
