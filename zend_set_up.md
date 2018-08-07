@@ -20,7 +20,7 @@
 
 ## Task Run Project
 ```
-    const port=8000
-    const ip=localhost
-    php -S ip:port -t public public/index.php
+  const port=8000
+  const ip=localhost
+  php -S ip:port -t public public/index.php
 ```
