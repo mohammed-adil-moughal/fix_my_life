@@ -1,5 +1,5 @@
-task Set_Up_Redis
-{
+# Set_Up_Redis
+
   `sudo apt-get install make gcc g++`
   
   ## Dowload Redis package and unpack
@@ -164,4 +164,4 @@ task Set_Up_Redis
 
 
 
-}
+
