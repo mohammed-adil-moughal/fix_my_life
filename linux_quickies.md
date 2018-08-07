@@ -1,5 +1,5 @@
 # Kill_Port_In_Linux
-  ##command to kill a port
+  ## Command to kill a port
   ``
   const port=8000
   fuser -k port/tcp
