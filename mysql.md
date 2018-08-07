@@ -1,18 +1,18 @@
-##run
+## run
 `mysql -u root -p`
 
-##selectdatabase
+## selectdatabase
 `USE database;`
 
 
-##ShowPermissions
+## ShowPermissions
 `SHOW GRANTS FOR 'root'@'localhost';`
 
-##CreateUser
+## CreateUser
 `CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';`
 
-##GrantAllPermissions
+## GrantAllPermissions
 `GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';`
 
-##FlushallPrivileges
+## FlushallPrivileges
 `FLUSH PRIVILEGES;`
