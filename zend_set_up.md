@@ -1,5 +1,5 @@
 ## Importing_DataBases
-	```
+	
 	//Before SQL import//
 	
 	SET GLOBAL sql_mode = ' ';
@@ -11,7 +11,6 @@
 	//After successful run
 
 	SET FOREIGN_KEY_CHECKS=1; (edited)
-       ```
 
 ## Running_After_Clone
    ```
