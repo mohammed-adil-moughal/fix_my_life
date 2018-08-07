@@ -1,5 +1,5 @@
-task Get_Up_And_Running
-{
+   # Get_Up_And_Running
+
    ## Clone from Repo
    ```
    yarn
@@ -8,4 +8,4 @@ task Get_Up_And_Running
    ```
    ## Grant overlay permission in the window appearing just on the smartphone after run-android success
    ## Wait until all dependencies loaded
-}
+
