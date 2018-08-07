@@ -2,6 +2,7 @@
   ## Command to kill a port
   ``
   const port=8000
+  
   fuser -k port/tcp
   ``
   
