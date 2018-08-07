@@ -1,6 +1,7 @@
-task Importing_DataBases
-{
-	//Before SQL import/
+## Importing_DataBases
+	```
+	//Before SQL import//
+	
 	SET GLOBAL sql_mode = ' ';
 
 	USE schema;
@@ -10,17 +11,17 @@ task Importing_DataBases
 	//After successful run
 
 	SET FOREIGN_KEY_CHECKS=1; (edited)
-}
+       ```
 
-task Running_After_Clone
-{
-  composer dump-autoload
+## Running_After_Clone
+   ```
+   composer dump-autoload
   composer install --no-scripts 
-}
+  ```
 
-task Run_project
-{   
+## Task Run Project
+```
     const port=8000
     const ip=localhost
     php -S ip:port -t public public/index.php
-}
+```
