@@ -9,3 +9,5 @@ Contains commands to get you up and running faster
 :one:ZEND PHP set up
 :two:React Native 
 :three:Linux Quickies
+:four:Mysql
+
