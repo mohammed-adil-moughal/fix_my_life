@@ -7,7 +7,12 @@ Create Pull Requests if you feel you need to add something the end goal is to co
 Contains commands to get you up and running faster 
 
 :one:ZEND PHP set up
+
 :two:React Native 
+
 :three:Linux Quickies
-:four:Mysql
+
+:four:MySQL
+
+:five:Redis
 
