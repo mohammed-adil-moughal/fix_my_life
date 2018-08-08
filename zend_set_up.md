@@ -24,3 +24,13 @@ const port=8000
 const ip=localhost
 php -S ip:port -t public public/index.php
 ```
+## PHP versions
+` sudo update-alternatives --config php`
+
+## Installing PHP 5.6
+```
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php5.6
+```
