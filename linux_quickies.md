@@ -9,8 +9,14 @@
 
 # Task Permissions
 
-  ## Command to kill server
+  ## Command to change mod
   
   `chmod -R 777 file/name`
+  
+# Repo Prune
+  ## command to prune local repo
+  ```
+  repo-prune = !"git checkout master; git pull origin master; git fetch --all -p; git branch -vv | grep gone | awk '{ print $1  }' | xargs -n 1 git branch -D"
+  ```
   
 
