@@ -18,5 +18,13 @@
   ```
   repo-prune = !"git checkout master; git pull origin master; git fetch --all -p; git branch -vv | grep gone | awk '{ print $1  }' | xargs -n 1 git branch -D"
   ```
+# FETCH FROM GIT
+  ## comands to fetch from git and pull
+  ```
+  git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+  git fetch --all
+  git pull --all
+  ```
+  
   
 
