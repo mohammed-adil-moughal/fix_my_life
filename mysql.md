@@ -16,3 +16,11 @@
 
 ## FlushallPrivileges
 `FLUSH PRIVILEGES;`
+
+## AET
+`use am_clients;
+SET session sql_mode = ' ';
+SET GLOBAL sql_mode = '';
+show variables like 'sql_mode' ; 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";`
