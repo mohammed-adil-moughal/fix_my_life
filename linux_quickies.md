@@ -25,6 +25,11 @@
   git fetch --all
   git pull --all
   ```
-  
+# issue with lock
+https://www.linuxuprising.com/2018/07/how-to-fix-could-not-get-lock.html
+
+# switching php versions
+
+https://www.ostechnix.com/how-to-switch-between-multiple-php-versions-in-ubuntu/
   
 
