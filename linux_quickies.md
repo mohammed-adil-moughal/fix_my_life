@@ -33,3 +33,6 @@ https://www.linuxuprising.com/2018/07/how-to-fix-could-not-get-lock.html
 https://www.ostechnix.com/how-to-switch-between-multiple-php-versions-in-ubuntu/
   
 
+# mcrypt installation ubuntu 18.04
+https://websiteforstudents.com/install-php-7-2-mcrypt-module-on-ubuntu-18-04-lts/
+https://linuxconfig.org/how-to-install-mcrypt-php-module-on-ubuntu-18-04-linux
