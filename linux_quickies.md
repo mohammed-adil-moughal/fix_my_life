@@ -25,6 +25,11 @@
   git fetch --all
   git pull --all
   ```
+# git find conflicts
+```
+grep -H -r "<<<<<<< HEAD" .
+```
+
 # issue with lock
 https://www.linuxuprising.com/2018/07/how-to-fix-could-not-get-lock.html
 
