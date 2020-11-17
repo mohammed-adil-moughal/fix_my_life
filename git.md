@@ -60,32 +60,28 @@ Way easier, isn't it?
 Step 2: picking and squashing
 At this point your editor of choice will pop up, showing the list of commits you want to merge. Note that it might be confusing at first, since they are displayed in a reverse order, where the older commit is on top. I've added --- older commit and --- newer commit to make it clear, you won't find those notes in the editor.
 
->pick d94e78 Prepare the workbench for feature Z     --- older commit
+```pick d94e78 Prepare the workbench for feature Z     --- older commit
 pick 4e9baa Cool implementation 
 pick afb581 Fix this and that  
 pick 643d0e Code cleanup
 pick 87871a I'm ready! 
 pick 0c3317 Whoops, not yet... 
 pick 871adf OK, feature Z is fully implemented      --- newer commit
+```
 
 [...]
 Below the commit list there is a short comment (omitted in my example) which outlines all the operations available. You can do many smart tricks during an interactive rebase, let's stick with the basics for now though. Our task here is to mark all the commits as squashable, except the first/older one: it will be used as a starting point.
 
 You mark a commit as squashable by changing the word pick into squash next to it (or s for brevity, as stated in the comments). The result would be:
-
->pick d94e78 Prepare the workbench for feature Z     --- older commit
-
->s 4e9baa Cool implementation 
-
->s afb581 Fix this and that  
-
->s 643d0e Code cleanup
-
->s 87871a I'm ready! 
-
->s 0c3317 Whoops, not yet... 
-
->s 871adf OK, feature Z is fully implemented      --- newer commit
+```
+pick d94e78 Prepare the workbench for feature Z     --- older commit
+s 4e9baa Cool implementation 
+s afb581 Fix this and that  
+s 643d0e Code cleanup
+s 87871a I'm ready! 
+s 0c3317 Whoops, not yet... 
+s 871adf OK, feature Z is fully implemented      --- newer commit
+```
 
 [...]
 Save the file and close the editor.
@@ -94,14 +90,15 @@ Step 3: Create the new commit
 You have just told Git to combine all seven commits into the the first commit in the list. It's now time to give it a name: your editor pops up again with a default message, made of the names of all the commits you have squashed.
 
 You can leave it as it is and the commit message will result in a list of all the intermediate commits, as follows:
-
->Prepare the workbench for feature Z
+```
+Prepare the workbench for feature Z
 Cool implementation 
 Fix this and that  
 Code cleanup
 I'm ready! 
 Whoops, not yet... 
 OK, feature Z is fully implemented
+```
 
 Usually I don't care to keep such information, so I wipe out the default message and use something more self-explanatory like Implemented feature Z.
 
