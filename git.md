@@ -40,6 +40,7 @@ Obtaining:
 Notice how a rebase generates a new commit with a new hash (84d1f8 in the example above). So in this case the command would be:
 
 > git rebase --interactive HEAD~[7]
+
 because I want to combine the last seven commits into one, and d94e78 Prepare the workbench for feature Z is the seventh one.
 
 # Option 2
@@ -48,9 +49,11 @@ I have tons of commits to squash, do I have to count them one by one?
 A downside of the git rebase --interactive HEAD~[N] command is that you have to guess the exact number of commits, by counting them one by one. Luckily, there is another way:
 
 >git rebase --interactive [commit-hash]
+
 Where [commit-hash] is the hash of the commit just before the first one you want to rewrite from. So in my example the command would be:
 
 >git rebase --interactive 6394dc
+
 Where 6394dc is Feature Y. You can read the whole thing as:
 
 Merge all my commits on top of commit [commit-hash].
