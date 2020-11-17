@@ -9,7 +9,8 @@ Or, shorter:
 
 where N is the number of commits you want to join, starting from the most recent one. For example, this is a hypothetical list of commits taken from the git log command, while I'm working on a generic feature Z:
 
->871adf OK, feature Z is fully implemented      --- newer commit
+```sh 
+871adf OK, feature Z is fully implemented      --- newer commit
 0c3317 Whoops, not yet...
 87871a I'm ready!
 643d0e Code cleanup
@@ -17,21 +18,24 @@ afb581 Fix this and that
 4e9baa Cool implementation
 d94e78 Prepare the workbench for feature Z
 6394dc Feature Y                               --- older commit
+```
 
 And this is what I would like to do:
 
->871adf OK, feature Z is fully implemented      --- newer commit --┐
->0c3317 Whoops, not yet...                                         |
->87871a I'm ready!                                                 |
->643d0e Code cleanup                                               |-- Join these into one
->afb581 Fix this and that                                          |
->4e9baa Cool implementation                                        |
->d94e78 Prepare the workbench for feature Z     -------------------┘
->6394dc Feature Y                               --- older commit
-
+```871adf OK, feature Z is fully implemented      --- newer commit --┐
+0c3317 Whoops, not yet...                                         |
+87871a I'm ready!                                                 |
+643d0e Code cleanup                                               |-- Join these into one
+afb581 Fix this and that                                          |
+4e9baa Cool implementation                                        |
+d94e78 Prepare the workbench for feature Z     -------------------┘
+6394dc Feature Y                               --- older commit
+```
+```
 Obtaining:
 >84d1f8 Feature Z                               --- newer commit (result of rebase)
 >6394dc Feature Y                               --- older commit
+```
 
 Notice how a rebase generates a new commit with a new hash (84d1f8 in the example above). So in this case the command would be:
 
