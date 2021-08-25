@@ -1,3 +1,16 @@
+# Cherry Pick
+Git's cherry-pick command allows you to "cherry pick" only the commits you want from another branch.
+
+Here are the steps to using it:
+
+Pull down the branch locally. Use your git GUI or pull it down on the command line, whatever you'd like.
+Get back into the branch you're merging into. You'll likely do this by running `git checkout master`.
+Find the commits you want to pull into your branch. Go to either the `git log` or the GitHub UI and grab the unique commit hashes for each of the commits that you want.
+"Cherry pick" the commits you want into this branch. Run this command: `git cherry-pick super-long-hash-here`. That will pull just this commit into your current branch.
+Push up this branch like normal. `git push origin master`
+
+
+
 # Option 1
 The first thing to do is to invoke git to start an interactive rebase session:
 
