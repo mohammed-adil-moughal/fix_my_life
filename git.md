@@ -1,3 +1,6 @@
+# List branches on local with order
+git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+
 # Rollback commits
 Rogue Coder?
 Working on your own and just want it to work? Follow these instructions below, they’ve worked reliably for me and many others for years.
