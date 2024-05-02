@@ -1,0 +1,3 @@
+#symlinking
+
+sudo ln -s /Users/mohammedadilmoughal/.cache/puppeteer/chrome-headless-shell/mac_arm-122.0.6261.69/chrome-headless-shell-mac-arm64/chrome-headless-shell /usr/local/bin/chrome-headless-shell
