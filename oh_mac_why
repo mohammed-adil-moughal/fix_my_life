@@ -2,3 +2,7 @@
 
 sudo ln -s /Users/mohammedadilmoughal/.cache/puppeteer/chrome-headless-shell/mac_arm-122.0.6261.69/chrome-headless-shell-mac-arm64/chrome-headless-shell /usr/local/bin/chrome-headless-shell
 sudo ln -s /Users/mohammedadilmoughal/Library/Application\ Support/Herd/config/nvm/versions/node/v18.19.1/bin/mjml /usr/local/bin/mjml 
+
+# External monitor not working
+
+sudo rm -rf com.apple.windowserver.displays.plist ,,,then restart
